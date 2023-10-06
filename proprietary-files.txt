@@ -22,6 +22,11 @@ odm/etc/acdbdata/Speaker_cal.acdb
 # Audio firmware
 odm/firmware/tfa98xx.cnt
 
+# Audio libraries
+odm/lib/liblvimfs.so
+odm/lib/liblvimfs_wrapper.so
+vendor/lib/hw/audio.primary.kona.so
+
 # Audio LVIMFS Params
 odm/etc/lvimfs_params/LVACFS_Configuration.txt
 odm/etc/lvimfs_params/LVIMFS_Calibration_2mic.dat
@@ -51,6 +56,24 @@ odm/etc/lvimfs_params/LVIMFS_Parameter_ID8_MIC_Unprocess.txt
 odm/etc/lvimfs_params/LVIMFS_Parameter_ID9_MIC_Voice.txt
 
 
+# Charger firmware
+odm/firmware/fastchg/19705/oplus_vooc_fw.bin
+odm/firmware/fastchg/19795/oplus_vooc_fw.bin
+odm/firmware/fastchg/20607/oplus_vooc_fw.bin
+odm/firmware/fastchg/21027/charging_thermal_config_default.txt
+odm/firmware/fastchg/21615/charging_thermal_config_default.txt
+odm/firmware/fastchg/21615/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/21619/charging_thermal_config_default.txt
+odm/firmware/fastchg/21619/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/21623/charging_thermal_config_default.txt
+odm/firmware/fastchg/21623/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/21732/charging_thermal_config_default.txt
+odm/firmware/fastchg/21732/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/21733/charging_thermal_config_default.txt
+odm/firmware/fastchg/21733/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/charging_thermal_config_default.txt
+odm/firmware/fastchg/smart_chg_config_table.txt
+
 # Camera
 odm/etc/camera/ashdr/ncf_pack.ncf
 odm/etc/camera/darksight/darksight_main.bin
@@ -69,6 +92,22 @@ odm/lib64/camera/com.qti.tuned.sm8250_qtech_ov64b.bin
 odm/lib64/camera/com.qti.tuned.sm8250_shine_ov02b.bin
 odm/lib64/camera/com.qti.tuned.sm8250_truly_hi846.bin
 odm/lib64/camera/com.qti.tuned.sm8250_truly_imx471.bin
+
+
+# IPA firmware
+vendor/firmware/ipa_fws.b00
+vendor/firmware/ipa_fws.b01
+vendor/firmware/ipa_fws.b02
+vendor/firmware/ipa_fws.b03
+vendor/firmware/ipa_fws.b04
+vendor/firmware/ipa_fws.elf
+vendor/firmware/ipa_fws.mdt
+vendor/firmware/ipa_uc.b00
+vendor/firmware/ipa_uc.b01
+vendor/firmware/ipa_uc.b02
+vendor/firmware/ipa_uc.elf
+vendor/firmware/ipa_uc.mdt
+
 
 # Fingerprint firmware
 odm/vendor/firmware/ancap64.b00
@@ -99,46 +138,8 @@ vendor/firmware/image/opluseid.b06
 vendor/firmware/image/opluseid.b07
 vendor/firmware/image/opluseid.mdt
 
-# Iris
-odm/etc/inparm/irissoft/inParm.lst
-odm/etc/inparm/irissoft/inParm10.txt
-odm/etc/inparm/irissoft/inParm11.txt
-odm/etc/inparm/irissoft/inParm12.txt
-odm/etc/inparm/irissoft/inParm14_a.txt
-odm/etc/inparm/irissoft/inParm14_b.txt
-odm/etc/inparm/irissoft/inParm14_c.txt
-odm/etc/inparm/irissoft/inParm16_center.txt
-odm/etc/inparm/irissoft/inParm16_down.txt
-odm/etc/inparm/irissoft/inParm16_up.txt
-odm/etc/inparm/irissoft/inParm17_center.txt
-odm/etc/inparm/irissoft/inParm17_down.txt
-odm/etc/inparm/irissoft/inParm17_up.txt
-odm/etc/inparm/irissoft/inParm18_center.txt
-odm/etc/inparm/irissoft/inParm18_down.txt
-odm/etc/inparm/irissoft/inParm18_up.txt
-odm/etc/inparm/irissoft/inParm1_center.txt
-odm/etc/inparm/irissoft/inParm1_down.txt
-odm/etc/inparm/irissoft/inParm1_up.txt
-odm/etc/inparm/irissoft/inParm2_center.txt
-odm/etc/inparm/irissoft/inParm2_down.txt
-odm/etc/inparm/irissoft/inParm2_up.txt
-odm/etc/inparm/irissoft/inParm3_center.txt
-odm/etc/inparm/irissoft/inParm3_down.txt
-odm/etc/inparm/irissoft/inParm3_up.txt
-odm/etc/inparm/irissoft/inParm4_center.txt
-odm/etc/inparm/irissoft/inParm4_down.txt
-odm/etc/inparm/irissoft/inParm4_up.txt
-odm/etc/inparm/irissoft/inParm5_center.txt
-odm/etc/inparm/irissoft/inParm5_down.txt
-odm/etc/inparm/irissoft/inParm5_up.txt
-odm/etc/inparm/irissoft/inParm6_center.txt
-odm/etc/inparm/irissoft/inParm6_down.txt
-odm/etc/inparm/irissoft/inParm6_up.txt
-odm/etc/inparm/irissoft/inParm8_a.txt
-odm/etc/inparm/irissoft/inParm8_b.txt
-odm/etc/inparm/irissoft/inParm8_c.txt
-odm/etc/inparm/irissoft/mcfCheck.txt
-odm/etc/irissoft.fw
+# Listen
+vendor/lib/hw/sound_trigger.primary.kona.so
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
@@ -147,6 +148,12 @@ vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
+
+# NFC
+odm/etc/nfc/libnfc-mtp-SN100.conf_21733:vendor/etc/libnfc-nxp.conf
+odm/etc/nfc/libnfc-nci.conf_21733:vendor/etc/libnfc-nci.conf
+odm/lib/libsn100u_fw.so:vendor/lib/libsn100u_fw.so
+
 
 # Sensors
 odm/etc/sensor/config/kona_qrd_ak991x_0.json
