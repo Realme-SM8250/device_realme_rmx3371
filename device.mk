@@ -11,6 +11,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# Audio
+TARGET_HAS_AUDIO_LVIMFS := true
+TARGET_USES_BLUETOOTH_LE_AUDIO := true
 
 # Audio
 PRODUCT_COPY_FILES += \
