@@ -1,6 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
-## from RMX3371_11_C.04.
-
+## from OnePlus 9R (LE2101_11.F.21).
 
 # ACDB
 odm/etc/acdbdata/Bluetooth_cal.acdb
@@ -22,14 +21,18 @@ odm/etc/acdbdata/Speaker_cal.acdb
 # Audio firmware
 odm/firmware/tfa98xx.cnt
 
-# Audio libraries
-odm/lib/liblvimfs.so
-odm/lib/liblvimfs_wrapper.so
-vendor/lib/hw/audio.primary.kona.so
-
 # Audio LVIMFS Params
 odm/etc/lvimfs_params/LVACFS_Configuration.txt
 odm/etc/lvimfs_params/LVIMFS_Calibration_2mic.dat
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID1_MIC_Normal.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID2_MIC_APP1.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID3_MIC_APP2.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID4_MIC_Cam.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID5_MIC_Conference.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID6_MIC_Fast.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID7_MIC_Interview.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID8_MIC_Unprocess.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID9_MIC_Voice.txt
 odm/etc/lvimfs_params/LVIMFS_Parameter_ID10_MIC_VR.txt
 odm/etc/lvimfs_params/LVIMFS_Parameter_ID11_HE.txt
 odm/etc/lvimfs_params/LVIMFS_Parameter_ID12_HE_APP1.txt
@@ -40,39 +43,12 @@ odm/etc/lvimfs_params/LVIMFS_Parameter_ID16_HE_Fast.txt
 odm/etc/lvimfs_params/LVIMFS_Parameter_ID17_HE_Interview.txt
 odm/etc/lvimfs_params/LVIMFS_Parameter_ID18_HE_Unprocess.txt
 odm/etc/lvimfs_params/LVIMFS_Parameter_ID19_HE_Voice.txt
-odm/etc/lvimfs_params/LVIMFS_Parameter_ID1_MIC_Normal.txt
 odm/etc/lvimfs_params/LVIMFS_Parameter_ID20_HE_VR.txt
 odm/etc/lvimfs_params/LVIMFS_Parameter_ID21_USB_Normal.txt
 odm/etc/lvimfs_params/LVIMFS_Parameter_ID22_USB_APP1.txt
 odm/etc/lvimfs_params/LVIMFS_Parameter_ID23_BT_Normal.txt
 odm/etc/lvimfs_params/LVIMFS_Parameter_ID24_BT_APP1.txt
-odm/etc/lvimfs_params/LVIMFS_Parameter_ID2_MIC_APP1.txt
-odm/etc/lvimfs_params/LVIMFS_Parameter_ID3_MIC_APP2.txt
-odm/etc/lvimfs_params/LVIMFS_Parameter_ID4_MIC_Cam.txt
-odm/etc/lvimfs_params/LVIMFS_Parameter_ID5_MIC_Conference.txt
-odm/etc/lvimfs_params/LVIMFS_Parameter_ID6_MIC_Fast.txt
-odm/etc/lvimfs_params/LVIMFS_Parameter_ID7_MIC_Interview.txt
-odm/etc/lvimfs_params/LVIMFS_Parameter_ID8_MIC_Unprocess.txt
-odm/etc/lvimfs_params/LVIMFS_Parameter_ID9_MIC_Voice.txt
 
-
-# Charger firmware
-odm/firmware/fastchg/19705/oplus_vooc_fw.bin
-odm/firmware/fastchg/19795/oplus_vooc_fw.bin
-odm/firmware/fastchg/20607/oplus_vooc_fw.bin
-odm/firmware/fastchg/21027/charging_thermal_config_default.txt
-odm/firmware/fastchg/21615/charging_thermal_config_default.txt
-odm/firmware/fastchg/21615/oplus_vooc_fw_rk826.bin
-odm/firmware/fastchg/21619/charging_thermal_config_default.txt
-odm/firmware/fastchg/21619/oplus_vooc_fw_rk826.bin
-odm/firmware/fastchg/21623/charging_thermal_config_default.txt
-odm/firmware/fastchg/21623/oplus_vooc_fw_rk826.bin
-odm/firmware/fastchg/21732/charging_thermal_config_default.txt
-odm/firmware/fastchg/21732/oplus_vooc_fw_rk826.bin
-odm/firmware/fastchg/21733/charging_thermal_config_default.txt
-odm/firmware/fastchg/21733/oplus_vooc_fw_rk826.bin
-odm/firmware/fastchg/charging_thermal_config_default.txt
-odm/firmware/fastchg/smart_chg_config_table.txt
 
 # Camera
 odm/etc/camera/ashdr/ncf_pack.ncf
@@ -92,21 +68,6 @@ odm/lib64/camera/com.qti.tuned.sm8250_qtech_ov64b.bin
 odm/lib64/camera/com.qti.tuned.sm8250_shine_ov02b.bin
 odm/lib64/camera/com.qti.tuned.sm8250_truly_hi846.bin
 odm/lib64/camera/com.qti.tuned.sm8250_truly_imx471.bin
-
-
-# IPA firmware
-vendor/firmware/ipa_fws.b00
-vendor/firmware/ipa_fws.b01
-vendor/firmware/ipa_fws.b02
-vendor/firmware/ipa_fws.b03
-vendor/firmware/ipa_fws.b04
-vendor/firmware/ipa_fws.elf
-vendor/firmware/ipa_fws.mdt
-vendor/firmware/ipa_uc.b00
-vendor/firmware/ipa_uc.b01
-vendor/firmware/ipa_uc.b02
-vendor/firmware/ipa_uc.elf
-vendor/firmware/ipa_uc.mdt
 
 
 # Fingerprint firmware
@@ -138,23 +99,6 @@ vendor/firmware/image/opluseid.b06
 vendor/firmware/image/opluseid.b07
 vendor/firmware/image/opluseid.mdt
 
-# Listen
-vendor/lib/hw/sound_trigger.primary.kona.so
-
-# Keymaster
-vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
-vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc
-vendor/lib64/libkeymasterdeviceutils.so
-vendor/lib64/libkeymasterprovision.so
-vendor/lib64/libkeymasterutils.so
-vendor/lib64/libqtikeymaster4.so
-
-# NFC
-odm/etc/nfc/libnfc-mtp-SN100.conf_21733:vendor/etc/libnfc-nxp.conf
-odm/etc/nfc/libnfc-nci.conf_21733:vendor/etc/libnfc-nci.conf
-odm/lib/libsn100u_fw.so:vendor/lib/libsn100u_fw.so
-
-
 # Sensors
 odm/etc/sensor/config/kona_qrd_ak991x_0.json
 odm/etc/sensor/config/kona_qrd_alsps.json
@@ -169,6 +113,15 @@ odm/etc/sensor/config/kona_qrd_mmc5603nj.json
 odm/etc/sensor/config/kona_qrd_mn29005.json
 odm/etc/sensor/config/kona_qrd_sx933x_0.json
 odm/etc/sensor/sensor_config.json
+
+# Keymaster
+vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
+vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc
+vendor/lib64/libkeymasterdeviceutils.so
+vendor/lib64/libkeymasterprovision.so
+vendor/lib64/libkeymasterutils.so
+vendor/lib64/libqtikeymaster4.so
+vendor/lib64/libspcom.so
 
 # WiFi
 odm/etc/wifi/bdwlan.elf

@@ -5,15 +5,18 @@
 -->
 <resources>
 
-   <!-- The Enrollment Progress bar for UDFPS sensor in pixels -->
-    <integer name="config_udfpsEnrollProgressBar" translatable="false">75</integer>
+    <!-- Respect drawable/rounded.xml intrinsic size for multiple radius corner path customization -->
+    <bool name="config_roundedCornerMultipleRadius">true</bool>
 
-   <!-- Margin on the bottom of the charging indicator on Keyguard -->
+    <!-- The Enrollment Progress bar for UDFPS sensor in pixels -->
+    <integer name="config_udfpsEnrollProgressBar" translatable="false">75</integer>
+    
+     <!-- Margin on the bottom of the charging indicator on Keyguard -->
     <dimen name="keyguard_indication_margin_bottom">3dp</dimen>
 
-   <!-- Whether show refresh rate QS tile -->
-    <bool name="config_showRefreshRateQsTile">true</bool>
+    <!-- The location of the devices physical alert slider.
+         0: Left
+         1: Right -->
+    <integer name="config_alertSliderLocation">1</integer>
 
 </resources>
-
-
