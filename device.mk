@@ -41,6 +41,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     OPlusFrameworksResTarget \
     OPlusSettingsProviderResTarget \
+    OPlusSettingsResTarget \
     OPlusSystemUIResTarget
 
 # Shipping API
